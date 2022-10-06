@@ -6,8 +6,10 @@ builds:
     binary: cartotest
     goos:
       - darwin
-      - linux
-      - windows
+#      - linux
+#      - windows
+    goarch:
+      - arm64
 
     mod_timestamp: '{{ .CommitTimestamp }}'
 
@@ -28,13 +30,8 @@ release:
   # If set to true, will not auto-publish the release.
   draft: true
 
-  # Useful if you want to delay the creation of the tag in the remote.
-  # You can create the tag locally, but not push it, and run GoReleaser.
-  target_commitish: '{{ .Commit }}'
-
 brews:
   - name: cartotest
-
 
     # NOTE: make sure the url_template, the token and given repo (github or
     # gitlab) owner and name are from the same kind.
