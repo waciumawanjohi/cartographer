@@ -22,7 +22,7 @@ archives:
 
 release:
   github:
-    owner: vmware-tanzu
+    owner: waciumawanjohi
     name: cartographer
 
   # If set to true, will not auto-publish the release.
