@@ -6,10 +6,8 @@ builds:
     binary: cartotest
     goos:
       - darwin
-#      - linux
-#      - windows
-    goarch:
-      - arm64
+      - linux
+      - windows
 
     mod_timestamp: '{{ .CommitTimestamp }}'
 
